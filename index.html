@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/99d1df08d7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container-1">
+      <div class="heading-container-1">
+        <h4 class="heading-content-1">
+          What is HTML? <span class="arrow-1"><i class="fas fa-chevron-down"></i></span>
+        </h4>
+      </div>
+      <div class="content-container-1">
+        <div class="content-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          maxime vel omnis natus recusandae quis, architecto doloribus enim
+          numquam quasi veniam, repudiandae perferendis. Officia exercitationem
+          odit architecto! Sit, corrupti fugiat?
+        </div>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="heading-container-2">
+        <h4 class="heading-content-2">
+          What is JavaScript?<span class="arrow-2"><i class="fas fa-chevron-down"></i></span>
+        </h4>
+      </div>
+      <div class="content-container-2">
+        <div class="content-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          maxime vel omnis natus recusandae quis, architecto doloribus enim
+          numquam quasi veniam, repudiandae perferendis. Officia exercitationem
+          odit architecto! Sit, corrupti fugiat?
+        </div>
+      </div>
+    </div>
+    <div class="container-3">
+      <div class="heading-container-3">
+        <h4 class="heading-content-3">
+          What is CSS? <span class="arrow-3"><i class="fas fa-chevron-down"></i></span>
+        </h4>
+      </div>
+      <div class="content-container-3">
+        <div class="content-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          maxime vel omnis natus recusandae quis, architecto doloribus enim
+          numquam quasi veniam, repudiandae perferendis. Officia exercitationem
+          odit architecto! Sit, corrupti fugiat?
+        </div>
+      </div>
+    </div>
+    <div class="container-4">
+      <div class="heading-container-4">
+        <h4 class="heading-content-4">
+          What is jQuery? <span class="arrow-4"><i class="fas fa-chevron-down"></i></span>
+        </h4>
+      </div>
+      <div class="content-container-4">
+        <div class="content-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          maxime vel omnis natus recusandae quis, architecto doloribus enim
+          numquam quasi veniam, repudiandae perferendis. Officia exercitationem
+          odit architecto! Sit, corrupti fugiat?
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".content-container-1").hide();
+      $(".content-container-2").hide();
+      $(".content-container-3").hide();
+      $(".content-container-4").hide();
+      $(document).ready(function () {
+        $(".container-1").click(function () {
+          $("div.heading-container-1").toggleClass("selected-heading");
+          $("span.arrow-1 i.fa-chevron-down").toggleClass("fa-chevron-up");
+          $("div.content-container-1").slideToggle(function () {
+          });
+        });
+      
+        $(".container-2").click(function () {
+          $("div.heading-container-2").toggleClass("selected-heading");
+          $("span.arrow-2 i.fa-chevron-down").toggleClass("fa-chevron-up");
+          $("div.content-container-2").slideToggle(function () {
+          });
+        });
+      });
+        $(".container-3").click(function () {
+          $("div.heading-container-3").toggleClass("selected-heading");
+          $("span.arrow-3 i.fa-chevron-down").toggleClass("fa-chevron-up");
+          $("div.content-container-3").slideToggle(function () {
+          });
+        });
+
+        $(".container-4").click(function () {
+          $("div.heading-container-4").toggleClass("selected-heading");
+          $("span.arrow-4 i.fa-chevron-down").toggleClass("fa-chevron-up");
+          $("div.content-container-4").slideToggle(function () {
+          });
+        });
+    </script>
+  </body>
+</html>
